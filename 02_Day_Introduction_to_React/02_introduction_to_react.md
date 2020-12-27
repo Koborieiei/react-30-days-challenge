@@ -138,11 +138,11 @@ Let us add a subtitles and other contents to this JSX element by adding addition
 
 ```js
 const header = (
-  <header>
-    <h1>Welcome to 30 Days Of React</h1>
-    <h2>Getting Started React</h2>
-    <h3>JavaScript Library</h3>
-  </header>
+ <header>
+  <h1>Welcome to 30 Days Of React</h1>
+  <h2>Getting Started React</h2>
+  <h3>JavaScript Library</h3>
+ </header>
 )
 ```
 
@@ -150,13 +150,13 @@ Let us keep adding more elements. Additional HTML elements to display the author
 
 ```js
 const header = (
-  <header>
-    <h1>Welcome to 30 Days Of React</h1>
-    <h2>Getting Started React</h2>
-    <h3>JavaScript Library</h3>
-    <p>Asabeneh Yetayeh</p>
-    <small>Oct 2, 2020</small>
-  </header>
+ <header>
+  <h1>Welcome to 30 Days Of React</h1>
+  <h2>Getting Started React</h2>
+  <h3>JavaScript Library</h3>
+  <p>Asabeneh Yetayeh</p>
+  <small>Oct 2, 2020</small>
+ </header>
 )
 ```
 
@@ -168,7 +168,7 @@ We comment codes for different reasons and it is also good to know how to commen
 
 ```js
 {
-  /*
+ /*
  <header>
     <h1>Welcome to 30 Days Of React</h1>
     <h2>Getting Started React</h2>
@@ -188,17 +188,17 @@ To render a JSX element to HTML document, we should first create an index HTML. 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30 Days Of React Challenge</title>
-  </head>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>30 Days Of React Challenge</title>
+ </head>
 
-  <body>
-    <div class="root"></div>
+ <body>
+  <div class="root"></div>
 
-    <script></script>
-  </body>
+  <script></script>
+ </body>
 </html>
 ```
 
@@ -207,19 +207,19 @@ As you can see from the above index.html, we have one div with a class root and 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30 Days Of React Challenge</title>
-  </head>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>30 Days Of React Challenge</title>
+ </head>
 
-  <body>
-    <div class="root"></div>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel">
-      // our code goes here
-    </script>
-  </body>
+ <body>
+  <div class="root"></div>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+   // our code goes here
+  </script>
+ </body>
 </html>
 ```
 
@@ -228,28 +228,28 @@ The babel library is linked to our document and now we can make use of it. The n
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30 Days Of React Challenge</title>
-  </head>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>30 Days Of React Challenge</title>
+ </head>
 
-  <body>
-    <div class="root"></div>
+ <body>
+  <div class="root"></div>
 
-    <script
-      crossorigin
-      src="https://unpkg.com/react@16/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-    ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel">
-      console.log(React)
-    </script>
-  </body>
+  <script
+   crossorigin
+   src="https://unpkg.com/react@16/umd/react.development.js"
+  ></script>
+  <script
+   crossorigin
+   src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+  ></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+   console.log(React)
+  </script>
+ </body>
 </html>
 ```
 
@@ -260,36 +260,36 @@ Now, you knew JSX and JSX element. Let us render the JSX element on the browser,
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30 Days Of React Challenge</title>
-  </head>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>30 Days Of React Challenge</title>
+ </head>
 
-  <body>
-    <div class="root"></div>
+ <body>
+  <div class="root"></div>
 
-    <script
-      crossorigin
-      src="https://unpkg.com/react@16/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-    ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel">
-      // To get the root element from the HTML document
-      const rootElement = document.querySelector('.root')
+  <script
+   crossorigin
+   src="https://unpkg.com/react@16/umd/react.development.js"
+  ></script>
+  <script
+   crossorigin
+   src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+  ></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+   // To get the root element from the HTML document
+   const rootElement = document.querySelector('.root')
 
-      // JSX element
-      const jsxElement = <h1>I am a JSX element</h1>
+   // JSX element
+   const jsxElement = <h1>I am a JSX element</h1>
 
-      // we render the JSX element using the ReactDOM package
-      // ReactDOM has the render method and the render method takes two arguments
-      ReactDOM.render(jsxElement, rootElement)
-    </script>
-  </body>
+   // we render the JSX element using the ReactDOM package
+   // ReactDOM has the render method and the render method takes two arguments
+   ReactDOM.render(jsxElement, rootElement)
+  </script>
+ </body>
 </html>
 ```
 
@@ -301,44 +301,44 @@ Let us render more content. To render more content, the JSX element should have 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30 Days Of React Challenge</title>
-  </head>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>30 Days Of React Challenge</title>
+ </head>
 
-  <body>
-    <div class="root"></div>
+ <body>
+  <div class="root"></div>
 
-    <script
-      crossorigin
-      src="https://unpkg.com/react@16/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-    ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel">
-      // To get the root element from the HTML document
-      const rootElement = document.querySelector('.root')
+  <script
+   crossorigin
+   src="https://unpkg.com/react@16/umd/react.development.js"
+  ></script>
+  <script
+   crossorigin
+   src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+  ></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+   // To get the root element from the HTML document
+   const rootElement = document.querySelector('.root')
 
-      // JSX element
-      const header = (
-        <header>
-          <h1>Welcome to 30 Days Of React</h1>
-          <h2>Getting Started React</h2>
-          <h3>JavaScript Library</h3>
-          <p>Asabeneh Yetayeh</p>
-          <small>Oct 2, 2020</small>
-        </header>
-      )
+   // JSX element
+   const header = (
+    <header>
+     <h1>Welcome to 30 Days Of React</h1>
+     <h2>Getting Started React</h2>
+     <h3>JavaScript Library</h3>
+     <p>Asabeneh Yetayeh</p>
+     <small>Oct 2, 2020</small>
+    </header>
+   )
 
-      // we render the JSX element using the ReactDOM package
-      // ReactDOM has the render method and the render method takes two arguments
-      ReactDOM.render(header, rootElement)
-    </script>
-  </body>
+   // we render the JSX element using the ReactDOM package
+   // ReactDOM has the render method and the render method takes two arguments
+   ReactDOM.render(header, rootElement)
+  </script>
+ </body>
 </html>
 ```
 
@@ -351,14 +351,14 @@ JSX element for the main part of the website.
 ```js
 // JSX element
 const main = (
-  <main>
-    <p>Prerequisite to get started react.js:</p>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-  </main>
+ <main>
+  <p>Prerequisite to get started react.js:</p>
+  <ul>
+   <li>HTML</li>
+   <li>CSS</li>
+   <li>JavaScript</li>
+  </ul>
+ </main>
 )
 ```
 
@@ -367,9 +367,9 @@ JSX element for the footer part of the website.
 ```js
 // JSX element
 const footer = (
-  <footer>
-    <p>Copyright 2020</p>
-  </footer>
+ <footer>
+  <p>Copyright 2020</p>
+ </footer>
 )
 ```
 
@@ -378,41 +378,41 @@ Now, we have three JSX elements: the header, main and footer. The best way to re
 ```js
 // JSX element for the header part of the website
 const header = (
-  <header>
-    <h1>Welcome to 30 Days Of React</h1>
-    <h2>Getting Started React</h2>
-    <h3>JavaScript Library</h3>
-    <p>Asabeneh Yetayeh</p>
-    <small>Oct 2, 2020</small>
-  </header>
+ <header>
+  <h1>Welcome to 30 Days Of React</h1>
+  <h2>Getting Started React</h2>
+  <h3>JavaScript Library</h3>
+  <p>Asabeneh Yetayeh</p>
+  <small>Oct 2, 2020</small>
+ </header>
 )
 
 // JSX element for the main part of the website
 const main = (
-  <main>
-    <p>Prerequisite to get started react.js:</p>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-  </main>
+ <main>
+  <p>Prerequisite to get started react.js:</p>
+  <ul>
+   <li>HTML</li>
+   <li>CSS</li>
+   <li>JavaScript</li>
+  </ul>
+ </main>
 )
 
 // JSX element for the footer part of the website
 const footer = (
-  <footer>
-    <p>Copyright 2020</p>
-  </footer>
+ <footer>
+  <p>Copyright 2020</p>
+ </footer>
 )
 
 // JSX element which contain all, it is a container or parent
 const app = (
-  <div>
-    {header}
-    {main}
-    {footer}
-  </div>
+ <div>
+  {header}
+  {main}
+  {footer}
+ </div>
 )
 ```
 
@@ -421,74 +421,74 @@ Now, let us put everything together and render it to the browser. [Live on code 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30 Days Of React Challenge</title>
-  </head>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>30 Days Of React Challenge</title>
+ </head>
 
-  <body>
-    <div class="root"></div>
+ <body>
+  <div class="root"></div>
 
-    <script
-      crossorigin
-      src="https://unpkg.com/react@16/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-    ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel">
-      // To get the root element from the HTML document
-      const rootElement = document.querySelector('.root')
+  <script
+   crossorigin
+   src="https://unpkg.com/react@16/umd/react.development.js"
+  ></script>
+  <script
+   crossorigin
+   src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+  ></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+   // To get the root element from the HTML document
+   const rootElement = document.querySelector('.root')
 
-      // JSX element, header
-      const header = (
-        <header>
-          <h1>Welcome to 30 Days Of React</h1>
-          <h2>Getting Started React</h2>
-          <h3>JavaScript Library</h3>
-          <p>Asabeneh Yetayeh</p>
-          <small>Oct 2, 2020</small>
-        </header>
-      )
+   // JSX element, header
+   const header = (
+    <header>
+     <h1>Welcome to 30 Days Of React</h1>
+     <h2>Getting Started React</h2>
+     <h3>JavaScript Library</h3>
+     <p>Asabeneh Yetayeh</p>
+     <small>Oct 2, 2020</small>
+    </header>
+   )
 
-      // JSX element, main
-      const main = (
-        <main>
-          <p>Prerequisite to get started react.js:</p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-        </main>
-      )
+   // JSX element, main
+   const main = (
+    <main>
+     <p>Prerequisite to get started react.js:</p>
+     <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+     </ul>
+    </main>
+   )
 
-      // JSX element, footer
-      const footer = (
-        <footer>
-          <p>Copyright 2020</p>
-        </footer>
-      )
+   // JSX element, footer
+   const footer = (
+    <footer>
+     <p>Copyright 2020</p>
+    </footer>
+   )
 
-      // JSX element, app, a container or a parent
-      const app = (
-        <div>
-          {header}
-          {main}
-          {footer}
-        </div>
-      )
+   // JSX element, app, a container or a parent
+   const app = (
+    <div>
+     {header}
+     {main}
+     {footer}
+    </div>
+   )
 
-      // we render the JSX element using the ReactDOM package
-      // ReactDOM has the render method and the render method takes two argument
-      ReactDOM.render(app, rootElement)
-      // or
-      //  ReactDOM.render([header, main, footer], rootElement)
-    </script>
-  </body>
+   // we render the JSX element using the ReactDOM package
+   // ReactDOM has the render method and the render method takes two argument
+   ReactDOM.render(app, rootElement)
+   // or
+   //  ReactDOM.render([header, main, footer], rootElement)
+  </script>
+ </body>
 </html>
 ```
 
@@ -508,15 +508,15 @@ To add style to a JSX element we use inline style or className. We inject the st
 
 ```js
 const header = (
-  <header
-    style={{ border: '2px solid orange', color: 'black', fontSize: '18px' }}
-  >
-    <h1>Welcome to 30 Days Of React</h1>
-    <h2>Getting Started React</h2>
-    <h3>JavaScript Library</h3>
-    <p>Asabeneh Yetayeh</p>
-    <small>Oct 2, 2020</small>
-  </header>
+ <header
+  style={{ border: '2px solid orange', color: 'black', fontSize: '18px' }}
+ >
+  <h1>Welcome to 30 Days Of React</h1>
+  <h2>Getting Started React</h2>
+  <h3>JavaScript Library</h3>
+  <p>Asabeneh Yetayeh</p>
+  <small>Oct 2, 2020</small>
+ </header>
 )
 
 // or we can write it this way
@@ -524,13 +524,13 @@ const header = (
 const style = { border: '2px solid orange', color: 'black', fontSize: '18px' }
 
 const header = (
-  <header style={style}>
-    <h1>Welcome to 30 Days Of React</h1>
-    <h2>Getting Started React</h2>
-    <h3>JavaScript Library</h3>
-    <p>Asabeneh Yetayeh</p>
-    <small>Oct 2, 2020</small>
-  </header>
+ <header style={style}>
+  <h1>Welcome to 30 Days Of React</h1>
+  <h2>Getting Started React</h2>
+  <h3>JavaScript Library</h3>
+  <p>Asabeneh Yetayeh</p>
+  <small>Oct 2, 2020</small>
+ </header>
 )
 ```
 
@@ -541,12 +541,12 @@ Let us keep styling all the JSX elements we have created: the header, main and t
 In JSX element we write className instead of class because class is a reserved word in JavaScript. Similar to className, htmlFor instead of for in label tag. See the example below.
 
 ```js
-const title = <h1 className='title'>Getting Started React</h1>
+const title = <h1 className="title">Getting Started React</h1>
 const inputField = (
-  <div>
-    <label htmlFor='firstname'>First Name</label>
-    <input type='text' id='firstname' placeholder='First Name' />
-  </div>
+ <div>
+  <label htmlFor="firstname">First Name</label>
+  <input type="text" id="firstname" placeholder="First Name" />
+ </div>
 )
 ```
 
@@ -561,87 +561,87 @@ Now, you know how to use the inline style and how to use className. Let us style
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30 Days Of React Challenge</title>
-  </head>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>30 Days Of React Challenge</title>
+ </head>
 
-  <body>
-    <div class="root"></div>
+ <body>
+  <div class="root"></div>
 
-    <script
-      crossorigin
-      src="https://unpkg.com/react@16/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-    ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel">
-      // To get the root element from the HTML document
-      const rootElement = document.querySelector('.root')
+  <script
+   crossorigin
+   src="https://unpkg.com/react@16/umd/react.development.js"
+  ></script>
+  <script
+   crossorigin
+   src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+  ></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+   // To get the root element from the HTML document
+   const rootElement = document.querySelector('.root')
 
-      // style
-      const headerStyles = {
-        backgroundColor: '#61DBFB',
-        fontFamily: 'Helvetica Neue',
-        padding: 25,
-        lineHeight: 1.5,
-      }
+   // style
+   const headerStyles = {
+    backgroundColor: '#61DBFB',
+    fontFamily: 'Helvetica Neue',
+    padding: 25,
+    lineHeight: 1.5,
+   }
 
-      // JSX element, header
-      const header = (
-        <header style={headerStyles}>
-          <div className='header-wrapper'>
-            <h1>Welcome to 30 Days Of React</h1>
-            <h2>Getting Started React</h2>
-            <h3>JavaScript Library</h3>
-            <p>Asabeneh Yetayeh</p>
-            <small>Oct 2, 2020</small>
-          </div>
-        </header>
-      )
+   // JSX element, header
+   const header = (
+    <header style={headerStyles}>
+     <div className="header-wrapper">
+      <h1>Welcome to 30 Days Of React</h1>
+      <h2>Getting Started React</h2>
+      <h3>JavaScript Library</h3>
+      <p>Asabeneh Yetayeh</p>
+      <small>Oct 2, 2020</small>
+     </div>
+    </header>
+   )
 
-      // JSX element, main
-      const mainStyles = {
-        backgroundColor: '#F3F0F5',
-      }
-      const main = (
-        <main style={mainStyles}>
-          <p>Prerequisite to get started react.js:</p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-        </main>
-      )
+   // JSX element, main
+   const mainStyles = {
+    backgroundColor: '#F3F0F5',
+   }
+   const main = (
+    <main style={mainStyles}>
+     <p>Prerequisite to get started react.js:</p>
+     <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+     </ul>
+    </main>
+   )
 
-      const footerStyles = {
-        backgroundColor: '#61DBFB',
-      }
-      // JSX element, footer
-      const footer = (
-        <footer style={footerStyles}>
-          <p>Copyright 2020</p>
-        </footer>
-      )
+   const footerStyles = {
+    backgroundColor: '#61DBFB',
+   }
+   // JSX element, footer
+   const footer = (
+    <footer style={footerStyles}>
+     <p>Copyright 2020</p>
+    </footer>
+   )
 
-      // JSX element, app
-      const app = (
-        <div className='app'>
-          {header}
-          {main}
-          {footer}
-        </div>
-      )
+   // JSX element, app
+   const app = (
+    <div className="app">
+     {header}
+     {main}
+     {footer}
+    </div>
+   )
 
-      // we render the JSX element using the ReactDOM package
-      ReactDOM.render(app, rootElement)
-    </script>
-  </body>
+   // we render the JSX element using the ReactDOM package
+   ReactDOM.render(app, rootElement)
+  </script>
+ </body>
 </html>
 ```
 
@@ -652,167 +652,167 @@ Instead of style object using regular styling method is more easy than the one a
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
-      rel="stylesheet"
-    />
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+   href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+   rel="stylesheet"
+  />
 
-    <title>30 Days Of React Challenge</title>
-    <style>
-      /* == General style === */
-      * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-      }
+  <title>30 Days Of React Challenge</title>
+  <style>
+   /* == General style === */
+   * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   }
 
-      html,
-      body {
-        height: 100%;
-        line-height: 1.5;
-        font-family: 'Montserrat';
-        font-weight: 300;
-        color: black;
-      }
+   html,
+   body {
+    height: 100%;
+    line-height: 1.5;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    color: black;
+   }
 
-      .root {
-        min-height: 100%;
-        position: relative;
-      }
+   .root {
+    min-height: 100%;
+    position: relative;
+   }
 
-      .header-wrapper,
-      .main-wrapper,
-      .footer-wrapper {
-        width: 85%;
-        margin: auto;
-      }
+   .header-wrapper,
+   .main-wrapper,
+   .footer-wrapper {
+    width: 85%;
+    margin: auto;
+   }
 
-      .header-wrapper,
-      .main-wrapper {
-        padding: 10px;
-        margin: 2px auto;
-      }
+   .header-wrapper,
+   .main-wrapper {
+    padding: 10px;
+    margin: 2px auto;
+   }
 
-      h1 {
-        font-size: 70px;
-        font-weight: 300;
-      }
+   h1 {
+    font-size: 70px;
+    font-weight: 300;
+   }
 
-      h2,
-      h3 {
-        font-weight: 300;
-      }
+   h2,
+   h3 {
+    font-weight: 300;
+   }
 
-      header {
-        background-color: #61dbfb;
-        padding: 10px;
-      }
+   header {
+    background-color: #61dbfb;
+    padding: 10px;
+   }
 
-      main {
-        padding: 10px;
-        padding-bottom: 60px;
-        /* Height of the footer */
-      }
+   main {
+    padding: 10px;
+    padding-bottom: 60px;
+    /* Height of the footer */
+   }
 
-      ul {
-        margin-left: 15px;
-      }
+   ul {
+    margin-left: 15px;
+   }
 
-      ul li {
-        list-style: none;
-      }
+   ul li {
+    list-style: none;
+   }
 
-      footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 60px;
-        /* Height of the footer */
-        background: #6cf;
-      }
+   footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    /* Height of the footer */
+    background: #6cf;
+   }
 
-      .footer-wrapper {
-        font-weight: 400;
-        text-align: center;
-        line-height: 60px;
-      }
-    </style>
-  </head>
+   .footer-wrapper {
+    font-weight: 400;
+    text-align: center;
+    line-height: 60px;
+   }
+  </style>
+ </head>
 
-  <body>
-    <div class="root"></div>
+ <body>
+  <div class="root"></div>
 
-    <script
-      crossorigin
-      src="https://unpkg.com/react@16/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-    ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel">
-      // To get the root element from the HTML document
-      const rootElement = document.querySelector('.root')
+  <script
+   crossorigin
+   src="https://unpkg.com/react@16/umd/react.development.js"
+  ></script>
+  <script
+   crossorigin
+   src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+  ></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+   // To get the root element from the HTML document
+   const rootElement = document.querySelector('.root')
 
-      // JSX element, header
-      const header = (
-        <header>
-          <div className='header-wrapper'>
-            <h1>Welcome to 30 Days Of React</h1>
-            <h2>Getting Started React</h2>
-            <h3>JavaScript Library</h3>
-            <p>Instructor: Asabeneh Yetayeh</p>
-            <small>Date: Oct 1, 2020</small>
-          </div>
-        </header>
-      )
+   // JSX element, header
+   const header = (
+    <header>
+     <div className="header-wrapper">
+      <h1>Welcome to 30 Days Of React</h1>
+      <h2>Getting Started React</h2>
+      <h3>JavaScript Library</h3>
+      <p>Instructor: Asabeneh Yetayeh</p>
+      <small>Date: Oct 1, 2020</small>
+     </div>
+    </header>
+   )
 
-      // JSX element, main
-      const main = (
-        <main>
-          <div className='main-wrapper'>
-            <p>
-              Prerequisite to get started{' '}
-              <strong>
-                <em>react.js</em>
-              </strong>
-              :
-            </p>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li> JavaScript</li>
-            </ul>
-          </div>
-        </main>
-      )
+   // JSX element, main
+   const main = (
+    <main>
+     <div className="main-wrapper">
+      <p>
+       Prerequisite to get started{' '}
+       <strong>
+        <em>react.js</em>
+       </strong>
+       :
+      </p>
+      <ul>
+       <li>HTML</li>
+       <li>CSS</li>
+       <li> JavaScript</li>
+      </ul>
+     </div>
+    </main>
+   )
 
-      // JSX element, footer
-      const footer = (
-        <footer>
-          <div className='footer-wrapper'>
-            <p>Copyright 2020</p>
-          </div>
-        </footer>
-      )
+   // JSX element, footer
+   const footer = (
+    <footer>
+     <div className="footer-wrapper">
+      <p>Copyright 2020</p>
+     </div>
+    </footer>
+   )
 
-      // JSX element, app
-      const app = (
-        <div className='app'>
-          {header}
-          {main}
-          {footer}
-        </div>
-      )
+   // JSX element, app
+   const app = (
+    <div className="app">
+     {header}
+     {main}
+     {footer}
+    </div>
+   )
 
-      // we render the JSX element using the ReactDOM package
-      ReactDOM.render(app, rootElement)
-    </script>
-  </body>
+   // we render the JSX element using the ReactDOM package
+   ReactDOM.render(app, rootElement)
+  </script>
+ </body>
 </html>
 ```
 
@@ -832,17 +832,17 @@ const date = 'Oct 1, 2020'
 
 // JSX element, header
 const header = (
-  <header>
-    <div className='header-wrapper'>
-      <h1>{welcome}</h1>
-      <h2>{title}</h2>
-      <h3>{subtitle}</h3>
-      <p>
-        Instructor: {authorFirstName} {authorLastName}
-      </p>
-      <small>Date: {date}</small>
-    </div>
-  </header>
+ <header>
+  <div className="header-wrapper">
+   <h1>{welcome}</h1>
+   <h2>{title}</h2>
+   <h3>{subtitle}</h3>
+   <p>
+    Instructor: {authorFirstName} {authorLastName}
+   </p>
+   <small>Date: {date}</small>
+  </div>
+ </header>
 )
 ```
 
@@ -864,17 +864,17 @@ const date = 'Oct 2, 2020'
 
 // JSX element, header
 const header = (
-  <header>
-    <div className='header-wrapper'>
-      <h1>{welcome}</h1>
-      <h2>{title}</h2>
-      <h3>{subtitle}</h3>
-      <p>
-        Instructor: {firstName} {lastName}
-      </p>
-      <small>Date: {date}</small>
-    </div>
-  </header>
+ <header>
+  <div className="header-wrapper">
+   <h1>{welcome}</h1>
+   <h2>{title}</h2>
+   <h3>{subtitle}</h3>
+   <p>
+    Instructor: {firstName} {lastName}
+   </p>
+   <small>Date: {date}</small>
+  </div>
+ </header>
 )
 ```
 
@@ -885,9 +885,9 @@ const numOne = 3
 const numTwo = 2
 
 const result = (
-  <p>
-    {numOne} + {numTwo} = {numOne + numTwo}
-  </p>
+ <p>
+  {numOne} + {numTwo} = {numOne + numTwo}
+ </p>
 )
 
 const yearBorn = 1820
@@ -907,18 +907,18 @@ const techs = ['HTML', 'CSS', 'JavaScript']
 
 // JSX element, main
 const main = (
-  <main>
-    <div className='main-wrapper'>
-      <p>
-        Prerequisite to get started{' '}
-        <strong>
-          <em>react.js</em>
-        </strong>
-        :
-      </p>
-      <ul>{techs}</ul>
-    </div>
-  </main>
+ <main>
+  <div className="main-wrapper">
+   <p>
+    Prerequisite to get started{' '}
+    <strong>
+     <em>react.js</em>
+    </strong>
+    :
+   </p>
+   <ul>{techs}</ul>
+  </div>
+ </main>
 )
 ```
 
@@ -931,199 +931,199 @@ Now, let us put everything together. Here, in the example below, the data is inj
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
-      rel="stylesheet"
-    />
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+   href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+   rel="stylesheet"
+  />
 
-    <title>30 Days Of React Challenge</title>
-    <style>
-      /* == General style === */
-      * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-      }
+  <title>30 Days Of React Challenge</title>
+  <style>
+   /* == General style === */
+   * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   }
 
-      html,
-      body {
-        height: 100%;
-        line-height: 1.5;
-        font-family: 'Montserrat';
-        font-weight: 300;
-        color: black;
-      }
+   html,
+   body {
+    height: 100%;
+    line-height: 1.5;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    color: black;
+   }
 
-      .root {
-        min-height: 100%;
-        position: relative;
-      }
+   .root {
+    min-height: 100%;
+    position: relative;
+   }
 
-      .header-wrapper,
-      .main-wrapper,
-      .footer-wrapper {
-        width: 85%;
-        margin: auto;
-      }
+   .header-wrapper,
+   .main-wrapper,
+   .footer-wrapper {
+    width: 85%;
+    margin: auto;
+   }
 
-      .header-wrapper,
-      .main-wrapper {
-        padding: 10px;
-        margin: 2px auto;
-      }
+   .header-wrapper,
+   .main-wrapper {
+    padding: 10px;
+    margin: 2px auto;
+   }
 
-      h1 {
-        font-size: 70px;
-        font-weight: 300;
-      }
+   h1 {
+    font-size: 70px;
+    font-weight: 300;
+   }
 
-      h2,
-      h3 {
-        font-weight: 300;
-      }
+   h2,
+   h3 {
+    font-weight: 300;
+   }
 
-      header {
-        background-color: #61dbfb;
-        padding: 10px;
-      }
+   header {
+    background-color: #61dbfb;
+    padding: 10px;
+   }
 
-      main {
-        padding: 10px 10px 60px;
-        /* Height of the footer */
-      }
+   main {
+    padding: 10px 10px 60px;
+    /* Height of the footer */
+   }
 
-      ul {
-        margin-left: 15px;
-      }
+   ul {
+    margin-left: 15px;
+   }
 
-      ul li {
-        list-style: none;
-      }
+   ul li {
+    list-style: none;
+   }
 
-      footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 60px;
-        /* Height of the footer */
-        background: #6cf;
-      }
+   footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    /* Height of the footer */
+    background: #6cf;
+   }
 
-      .footer-wrapper {
-        font-weight: 400;
-        text-align: center;
-        line-height: 60px;
-      }
-    </style>
-  </head>
+   .footer-wrapper {
+    font-weight: 400;
+    text-align: center;
+    line-height: 60px;
+   }
+  </style>
+ </head>
 
-  <body>
-    <div class="root"></div>
+ <body>
+  <div class="root"></div>
 
-    <script
-      crossorigin
-      src="https://unpkg.com/react@16/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-    ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel">
-      // To get the root element from the HTML document
-      const rootElement = document.querySelector('.root')
-      // JSX element, header
-      const welcome = 'Welcome to 30 Days Of React'
-      const title = 'Getting Started React'
-      const subtitle = 'JavaScript Library'
-      const author = {
-        firstName: 'Asabeneh',
-        lastName: 'Yetayeh',
-      }
-      const date = 'Oct 2, 2020'
+  <script
+   crossorigin
+   src="https://unpkg.com/react@16/umd/react.development.js"
+  ></script>
+  <script
+   crossorigin
+   src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+  ></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+   // To get the root element from the HTML document
+   const rootElement = document.querySelector('.root')
+   // JSX element, header
+   const welcome = 'Welcome to 30 Days Of React'
+   const title = 'Getting Started React'
+   const subtitle = 'JavaScript Library'
+   const author = {
+    firstName: 'Asabeneh',
+    lastName: 'Yetayeh',
+   }
+   const date = 'Oct 2, 2020'
 
-      // JSX element, header
-      const header = (
-        <header>
-          <div className='header-wrapper'>
-            <h1>{welcome}</h1>
-            <h2>{title}</h2>
-            <h3>{subtitle}</h3>
-            <p>
-              Instructor: {author.firstName} {author.lastName}
-            </p>
-            <small>Date: {date}</small>
-          </div>
-        </header>
-      )
+   // JSX element, header
+   const header = (
+    <header>
+     <div className="header-wrapper">
+      <h1>{welcome}</h1>
+      <h2>{title}</h2>
+      <h3>{subtitle}</h3>
+      <p>
+       Instructor: {author.firstName} {author.lastName}
+      </p>
+      <small>Date: {date}</small>
+     </div>
+    </header>
+   )
 
-      const numOne = 3
-      const numTwo = 2
+   const numOne = 3
+   const numTwo = 2
 
-      const result = (
-        <p>
-          {numOne} + {numTwo} = {numOne + numTwo}
-        </p>
-      )
+   const result = (
+    <p>
+     {numOne} + {numTwo} = {numOne + numTwo}
+    </p>
+   )
 
-      const yearBorn = 1820
-      const currentYear = new Date().getFullYear()
-      const age = currentYear - yearBorn
-      const personAge = (
-        <p>
-          {' '}
-          {author.firstName} {author.lastName} is {age} years old
-        </p>
-      )
+   const yearBorn = 1820
+   const currentYear = new Date().getFullYear()
+   const age = currentYear - yearBorn
+   const personAge = (
+    <p>
+     {' '}
+     {author.firstName} {author.lastName} is {age} years old
+    </p>
+   )
 
-      // JSX element, main
-      const techs = ['HTML', 'CSS', 'JavaScript']
+   // JSX element, main
+   const techs = ['HTML', 'CSS', 'JavaScript']
 
-      // JSX element, main
-      const main = (
-        <main>
-          <div className='main-wrapper'>
-            <p>
-              Prerequisite to get started{' '}
-              <strong>
-                <em>react.js</em>
-              </strong>
-              :
-            </p>
-            <ul>{techs}</ul>
-            {result}
-            {personAge}
-          </div>
-        </main>
-      )
+   // JSX element, main
+   const main = (
+    <main>
+     <div className="main-wrapper">
+      <p>
+       Prerequisite to get started{' '}
+       <strong>
+        <em>react.js</em>
+       </strong>
+       :
+      </p>
+      <ul>{techs}</ul>
+      {result}
+      {personAge}
+     </div>
+    </main>
+   )
 
-      const copyRight = 'Copyright 2020'
+   const copyRight = 'Copyright 2020'
 
-      // JSX element, footer
-      const footer = (
-        <footer>
-          <div className='footer-wrapper'>
-            <p>{copyRight}</p>
-          </div>
-        </footer>
-      )
+   // JSX element, footer
+   const footer = (
+    <footer>
+     <div className="footer-wrapper">
+      <p>{copyRight}</p>
+     </div>
+    </footer>
+   )
 
-      // JSX element, app
-      const app = (
-        <div className='app'>
-          {header}
-          {main}
-          {footer}
-        </div>
-      )
+   // JSX element, app
+   const app = (
+    <div className="app">
+     {header}
+     {main}
+     {footer}
+    </div>
+   )
 
-      // we render the JSX element using the ReactDOM package
-      ReactDOM.render(app, rootElement)
-    </script>
-  </body>
+   // we render the JSX element using the ReactDOM package
+   ReactDOM.render(app, rootElement)
+  </script>
+ </body>
 </html>
 ```
 
@@ -1141,200 +1141,200 @@ In the following code example, the list is now containing list elements and it i
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
-      rel="stylesheet"
-    />
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+   href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+   rel="stylesheet"
+  />
 
-    <title>30 Days Of React Challenge</title>
-    <style>
-      /* == General style === */
-      * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-      }
+  <title>30 Days Of React Challenge</title>
+  <style>
+   /* == General style === */
+   * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   }
 
-      html,
-      body {
-        height: 100%;
-        line-height: 1.5;
-        font-family: 'Montserrat';
-        font-weight: 300;
-        color: black;
-      }
+   html,
+   body {
+    height: 100%;
+    line-height: 1.5;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    color: black;
+   }
 
-      .root {
-        min-height: 100%;
-        position: relative;
-      }
+   .root {
+    min-height: 100%;
+    position: relative;
+   }
 
-      .header-wrapper,
-      .main-wrapper,
-      .footer-wrapper {
-        width: 85%;
-        margin: auto;
-      }
+   .header-wrapper,
+   .main-wrapper,
+   .footer-wrapper {
+    width: 85%;
+    margin: auto;
+   }
 
-      .header-wrapper,
-      .main-wrapper {
-        padding: 10px;
-        margin: 2px auto;
-      }
+   .header-wrapper,
+   .main-wrapper {
+    padding: 10px;
+    margin: 2px auto;
+   }
 
-      h1 {
-        font-size: 70px;
-        font-weight: 300;
-      }
+   h1 {
+    font-size: 70px;
+    font-weight: 300;
+   }
 
-      h2,
-      h3 {
-        font-weight: 300;
-      }
+   h2,
+   h3 {
+    font-weight: 300;
+   }
 
-      header {
-        background-color: #61dbfb;
-        padding: 10px;
-      }
+   header {
+    background-color: #61dbfb;
+    padding: 10px;
+   }
 
-      main {
-        padding: 10px 10px 60px;
-        /* Height of the footer */
-      }
+   main {
+    padding: 10px 10px 60px;
+    /* Height of the footer */
+   }
 
-      ul {
-        margin-left: 15px;
-      }
+   ul {
+    margin-left: 15px;
+   }
 
-      ul li {
-        list-style: none;
-      }
+   ul li {
+    list-style: none;
+   }
 
-      footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 60px;
-        /* Height of the footer */
-        background: #6cf;
-      }
+   footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    /* Height of the footer */
+    background: #6cf;
+   }
 
-      .footer-wrapper {
-        font-weight: 400;
-        text-align: center;
-        line-height: 60px;
-      }
-    </style>
-  </head>
+   .footer-wrapper {
+    font-weight: 400;
+    text-align: center;
+    line-height: 60px;
+   }
+  </style>
+ </head>
 
-  <body>
-    <div class="root"></div>
+ <body>
+  <div class="root"></div>
 
-    <script
-      crossorigin
-      src="https://unpkg.com/react@16/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-    ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel">
-      // To get the root element from the HTML document
-      const rootElement = document.querySelector('.root')
-      // JSX element, header
-      const welcome = 'Welcome to 30 Days Of React Challenge'
-      const title = 'Getting Started React'
-      const subtitle = 'JavaScript Library'
-      const author = {
-        firstName: 'Asabeneh',
-        lastName: 'Yetayeh',
-      }
-      const date = 'Oct 2, 2020'
+  <script
+   crossorigin
+   src="https://unpkg.com/react@16/umd/react.development.js"
+  ></script>
+  <script
+   crossorigin
+   src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+  ></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+   // To get the root element from the HTML document
+   const rootElement = document.querySelector('.root')
+   // JSX element, header
+   const welcome = 'Welcome to 30 Days Of React Challenge'
+   const title = 'Getting Started React'
+   const subtitle = 'JavaScript Library'
+   const author = {
+    firstName: 'Asabeneh',
+    lastName: 'Yetayeh',
+   }
+   const date = 'Oct 2, 2020'
 
-      // JSX element, header
-      const header = (
-        <header>
-          <div className='header-wrapper'>
-            <h1>{welcome}</h1>
-            <h2>{title}</h2>
-            <h3>{subtitle}</h3>
-            <p>
-              Instructor: {author.firstName} {author.lastName}
-            </p>
-            <small>Date: {date}</small>
-          </div>
-        </header>
-      )
+   // JSX element, header
+   const header = (
+    <header>
+     <div className="header-wrapper">
+      <h1>{welcome}</h1>
+      <h2>{title}</h2>
+      <h3>{subtitle}</h3>
+      <p>
+       Instructor: {author.firstName} {author.lastName}
+      </p>
+      <small>Date: {date}</small>
+     </div>
+    </header>
+   )
 
-      const numOne = 3
-      const numTwo = 2
+   const numOne = 3
+   const numTwo = 2
 
-      const result = (
-        <p>
-          {numOne} + {numTwo} = {numOne + numTwo}
-        </p>
-      )
+   const result = (
+    <p>
+     {numOne} + {numTwo} = {numOne + numTwo}
+    </p>
+   )
 
-      const yearBorn = 1820
-      const currentYear = new Date().getFullYear()
-      const age = currentYear - yearBorn
-      const personAge = (
-        <p>
-          {' '}
-          {author.firstName} {author.lastName} is {age} years old
-        </p>
-      )
+   const yearBorn = 1820
+   const currentYear = new Date().getFullYear()
+   const age = currentYear - yearBorn
+   const personAge = (
+    <p>
+     {' '}
+     {author.firstName} {author.lastName} is {age} years old
+    </p>
+   )
 
-      // JSX element, main
-      const techs = ['HTML', 'CSS', 'JavaScript']
-      const techsFormatted = techs.map((tech) => <li>{tech}</li>)
+   // JSX element, main
+   const techs = ['HTML', 'CSS', 'JavaScript']
+   const techsFormatted = techs.map((tech) => <li>{tech}</li>)
 
-      // JSX element, main
-      const main = (
-        <main>
-          <div className='main-wrapper'>
-            <p>
-              Prerequisite to get started{' '}
-              <strong>
-                <em>react.js</em>
-              </strong>
-              :
-            </p>
-            <ul>{techsFormatted}</ul>
-            {result}
-            {personAge}
-          </div>
-        </main>
-      )
+   // JSX element, main
+   const main = (
+    <main>
+     <div className="main-wrapper">
+      <p>
+       Prerequisite to get started{' '}
+       <strong>
+        <em>react.js</em>
+       </strong>
+       :
+      </p>
+      <ul>{techsFormatted}</ul>
+      {result}
+      {personAge}
+     </div>
+    </main>
+   )
 
-      const copyRight = 'Copyright 2020'
+   const copyRight = 'Copyright 2020'
 
-      // JSX element, footer
-      const footer = (
-        <footer>
-          <div className='footer-wrapper'>
-            <p>{copyRight}</p>
-          </div>
-        </footer>
-      )
+   // JSX element, footer
+   const footer = (
+    <footer>
+     <div className="footer-wrapper">
+      <p>{copyRight}</p>
+     </div>
+    </footer>
+   )
 
-      // JSX element, app
-      const app = (
-        <div className='app'>
-          {header}
-          {main}
-          {footer}
-        </div>
-      )
+   // JSX element, app
+   const app = (
+    <div className="app">
+     {header}
+     {main}
+     {footer}
+    </div>
+   )
 
-      // we render the JSX element using the ReactDOM package
-      ReactDOM.render(app, rootElement)
-    </script>
-  </body>
+   // we render the JSX element using the ReactDOM package
+   ReactDOM.render(app, rootElement)
+  </script>
+ </body>
 </html>
 ```
 
@@ -1346,201 +1346,201 @@ As you can see above, now the lists are formatted properly, but there is a warni
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
-      rel="stylesheet"
-    />
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+   href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+   rel="stylesheet"
+  />
 
-    <title>30 Days Of React Challenge</title>
-    <style>
-      /* == General style === */
-      * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-      }
+  <title>30 Days Of React Challenge</title>
+  <style>
+   /* == General style === */
+   * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   }
 
-      html,
-      body {
-        height: 100%;
-        line-height: 1.5;
-        font-family: 'Montserrat';
-        font-weight: 300;
-        color: black;
-      }
+   html,
+   body {
+    height: 100%;
+    line-height: 1.5;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    color: black;
+   }
 
-      .root {
-        min-height: 100%;
-        position: relative;
-      }
+   .root {
+    min-height: 100%;
+    position: relative;
+   }
 
-      .header-wrapper,
-      .main-wrapper,
-      .footer-wrapper {
-        width: 85%;
-        margin: auto;
-      }
+   .header-wrapper,
+   .main-wrapper,
+   .footer-wrapper {
+    width: 85%;
+    margin: auto;
+   }
 
-      .header-wrapper,
-      .main-wrapper {
-        padding: 10px;
-        margin: 2px auto;
-      }
+   .header-wrapper,
+   .main-wrapper {
+    padding: 10px;
+    margin: 2px auto;
+   }
 
-      h1 {
-        font-size: 70px;
-        font-weight: 300;
-      }
+   h1 {
+    font-size: 70px;
+    font-weight: 300;
+   }
 
-      h2,
-      h3 {
-        font-weight: 300;
-      }
+   h2,
+   h3 {
+    font-weight: 300;
+   }
 
-      header {
-        background-color: #61dbfb;
-        padding: 10px;
-      }
+   header {
+    background-color: #61dbfb;
+    padding: 10px;
+   }
 
-      main {
-        padding: 10px;
-        padding-bottom: 60px;
-        /* Height of the footer */
-      }
+   main {
+    padding: 10px;
+    padding-bottom: 60px;
+    /* Height of the footer */
+   }
 
-      ul {
-        margin-left: 15px;
-      }
+   ul {
+    margin-left: 15px;
+   }
 
-      ul li {
-        list-style: none;
-      }
+   ul li {
+    list-style: none;
+   }
 
-      footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 60px;
-        /* Height of the footer */
-        background: #6cf;
-      }
+   footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    /* Height of the footer */
+    background: #6cf;
+   }
 
-      .footer-wrapper {
-        font-weight: 400;
-        text-align: center;
-        line-height: 60px;
-      }
-    </style>
-  </head>
+   .footer-wrapper {
+    font-weight: 400;
+    text-align: center;
+    line-height: 60px;
+   }
+  </style>
+ </head>
 
-  <body>
-    <div class="root"></div>
+ <body>
+  <div class="root"></div>
 
-    <script
-      crossorigin
-      src="https://unpkg.com/react@16/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-    ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel">
-      // To get the root element from the HTML document
-      const rootElement = document.querySelector('.root')
-      // JSX element, header
-      const welcome = 'Welcome to 30 Days Of React Challenge'
-      const title = 'Getting Started React'
-      const subtitle = 'JavaScript Library'
-      const author = {
-        firstName: 'Asabeneh',
-        lastName: 'Yetayeh',
-      }
-      const date = 'Oct 2, 2020'
+  <script
+   crossorigin
+   src="https://unpkg.com/react@16/umd/react.development.js"
+  ></script>
+  <script
+   crossorigin
+   src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+  ></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+   // To get the root element from the HTML document
+   const rootElement = document.querySelector('.root')
+   // JSX element, header
+   const welcome = 'Welcome to 30 Days Of React Challenge'
+   const title = 'Getting Started React'
+   const subtitle = 'JavaScript Library'
+   const author = {
+    firstName: 'Asabeneh',
+    lastName: 'Yetayeh',
+   }
+   const date = 'Oct 2, 2020'
 
-      // JSX element, header
-      const header = (
-        <header>
-          <div className='header-wrapper'>
-            <h1>{welcome}</h1>
-            <h2>{title}</h2>
-            <h3>{subtitle}</h3>
-            <p>
-              Instructor: {author.firstName} {author.lastName}
-            </p>
-            <small>Date: {date}</small>
-          </div>
-        </header>
-      )
+   // JSX element, header
+   const header = (
+    <header>
+     <div className="header-wrapper">
+      <h1>{welcome}</h1>
+      <h2>{title}</h2>
+      <h3>{subtitle}</h3>
+      <p>
+       Instructor: {author.firstName} {author.lastName}
+      </p>
+      <small>Date: {date}</small>
+     </div>
+    </header>
+   )
 
-      const numOne = 3
-      const numTwo = 2
+   const numOne = 3
+   const numTwo = 2
 
-      const result = (
-        <p>
-          {numOne} + {numTwo} = {numOne + numTwo}
-        </p>
-      )
+   const result = (
+    <p>
+     {numOne} + {numTwo} = {numOne + numTwo}
+    </p>
+   )
 
-      const yearBorn = 1820
-      const currentYear = 2020
-      const age = currentYear - yearBorn
-      const personAge = (
-        <p>
-          {' '}
-          {author.firstName} {author.lastName} is {age} years old
-        </p>
-      )
+   const yearBorn = 1820
+   const currentYear = 2020
+   const age = currentYear - yearBorn
+   const personAge = (
+    <p>
+     {' '}
+     {author.firstName} {author.lastName} is {age} years old
+    </p>
+   )
 
-      // JSX element, main
-      const techs = ['HTML', 'CSS', 'JavaScript']
-      const techsFormatted = techs.map((tech) => <li key={tech}>{tech}</li>)
+   // JSX element, main
+   const techs = ['HTML', 'CSS', 'JavaScript']
+   const techsFormatted = techs.map((tech) => <li key={tech}>{tech}</li>)
 
-      // JSX element, main
-      const main = (
-        <main>
-          <div className='main-wrapper'>
-            <p>
-              Prerequisite to get started{' '}
-              <strong>
-                <em>react.js</em>
-              </strong>
-              :
-            </p>
-            <ul>{techsFormatted}</ul>
-            {result}
-            {personAge}
-          </div>
-        </main>
-      )
+   // JSX element, main
+   const main = (
+    <main>
+     <div className="main-wrapper">
+      <p>
+       Prerequisite to get started{' '}
+       <strong>
+        <em>react.js</em>
+       </strong>
+       :
+      </p>
+      <ul>{techsFormatted}</ul>
+      {result}
+      {personAge}
+     </div>
+    </main>
+   )
 
-      const copyRight = 'Copyright 2020'
+   const copyRight = 'Copyright 2020'
 
-      // JSX element, footer
-      const footer = (
-        <footer>
-          <div className='footer-wrapper'>
-            <p>{copyRight}</p>
-          </div>
-        </footer>
-      )
+   // JSX element, footer
+   const footer = (
+    <footer>
+     <div className="footer-wrapper">
+      <p>{copyRight}</p>
+     </div>
+    </footer>
+   )
 
-      // JSX element, app
-      const app = (
-        <div className='app'>
-          {header}
-          {main}
-          {footer}
-        </div>
-      )
+   // JSX element, app
+   const app = (
+    <div className="app">
+     {header}
+     {main}
+     {footer}
+    </div>
+   )
 
-      // we render the JSX element using the ReactDOM package
-      ReactDOM.render(app, rootElement)
-    </script>
-  </body>
+   // we render the JSX element using the ReactDOM package
+   ReactDOM.render(app, rootElement)
+  </script>
+ </body>
 </html>
 ```
 
@@ -1555,32 +1555,48 @@ Now, you have a very good understanding of how to create JSX elements and also h
 #### Exercises: What is React?
 
 1. What is React?
+   React is reuse able UI Components (Javascript libraly)
 2. What is a library?
+   Bunch of code which provided ?
 3. What is a single page application?
+   It is a website that have only html page
 4. What is a component ?
+   Things which appear on site
 5. What is the latest version of React?
+   16.13.1
 6. What is DOM?
+   Document object modal
 7. What is React Virtual DOM?
+   The function built-in which interact with DOM
 8. What does a web application or a website(composed of) have?
+   made of buttons, links, forms with different input fields
 
 #### Exercises: Why React?
 
 1. Why did you chose to use react?
 2. What measures do you use to know popularity ?
+   Watch
 3. What is more popular, React or Vue ?
+   React
 
 #### Exercises: JSX
 
 1. What is an HTML element?
+   H1 HTML
 2. How to write a self closing HTML element?
+<h1></h1>
 3. What is an HTML attribute? Write some of them
+<h1 style='font-size: 10px;'></h1>
 4. What is JSX?
+   Javascript XML
 5. What is babel?
+   Converter to javasctipt
 6. What is a transpiler?
+   Code Complier
 
 #### Exercises: JSX Elements
 
-1. What is a JSX element?
+1. What is a JSX element ?
 2. Write your name in a JSX element and store it in a name variable
 3. Write a JSX element which displays your full name, country, title, gender, email, phone number. Use h1 for the name and p for the rest of the information and store it in a user variable
 4. Write a footer JSX element
@@ -1589,15 +1605,26 @@ Now, you have a very good understanding of how to create JSX elements and also h
 
 1. Create a style object for the main JSX
 2. Create a style object for the footer and app JSX
+   const head = <header> <nav></nav></header>
 3. Add more styles to the JSX elements
+   const a = <header style={test}> <nav></nav></header>
 
 #### Exercises: Internal Styles
-
 1. Apply different styles to your JSX elements
+<style>
+.header {
+  background-color: black;
+}
+</style>
+const a = <header className="header"></header>
 
 #### Exercise: Inject data to JSX
-
 1. Practice how to make JSX element and injecting dynamic data(string, number, boolean, array, object)
+   let a = 1
+   let b = 2
+   let c = 3
+
+let composed = {a}+{b}+{c}
 
 🎉 CONGRATULATIONS ! 🎉
 
