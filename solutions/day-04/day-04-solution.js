@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
 // import './index.css'
 
 import reportWebVitals from './reportWebVitals'
@@ -44,7 +43,9 @@ const hexaColor = () => {
 const acitonButton = {
  fontFamily: 'Helvetica Neue',
  padding: 10,
+
  margin: 5,
+
  backgroundColor: `${hexaColor()}`,
  color: 'White',
  border: 'none',
