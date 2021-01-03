@@ -22,37 +22,19 @@ const TextWrapperStyle = {
  textAlign: 'center',
 }
 
-const Button = ({ text, onClick }) => {
- return <button onClick={onClick}>{text}</button>
+const Button = ({ onClick }) => {
+ return <button onClick={onClick}> Click me !</button>
 }
 
 class TextWrapper extends Component {
  render() {
-  const { decreaseOne, addOne, count, changeBg } = this.props
   return (
    <div style={TextWrapperStyle}>
     <h1>30Day of React</h1>
     <h2>World Poppulation</h2>
-    <h2>{count}</h2>
-    <Button text="Add One" onClick={addOne} />
-    <Button text="Decrease One" onClick={decreaseOne} />
-    <Button text="ChangeBg" onClick={changeBg} />
+    <Button onClick={this.props.onClick} />
    </div>
   )
- }
-}
-
-class Container extends Component {
- render() {
-  const countryList = this.props.data.map((country, index) => (
-   <ChartPopulation
-    key={index}
-    color={this.props.color}
-    worldpop={country}
-    count={this.props.count}
-   />
-  ))
-  return <>{countryList}</>
  }
 }
 
@@ -64,20 +46,19 @@ class ChartPopulation extends Component {
  render() {
   //  Reconstruct the props which reduce complexity on accessing the data
   const { country, population } = this.props.worldpop
-  const { color } = this.props
-  const style = {
-   backgroundColor: color,
-   width: this.progressBarCalculation(population),
-   height: 10,
-  }
-
   return (
    <div style={testStyle()}>
     <div style={childStyle}>
      <h2>{country}</h2>
     </div>
     <div style={childStyle}>
-     <div style={style}></div>
+     <div
+      style={{
+       backgroundColor: 'green',
+       width: this.progressBarCalculation(population),
+       height: 10,
+      }}
+     ></div>
     </div>
     <div style={childStyle}>
      <h3>{population.toLocaleString()}</h3>
@@ -87,37 +68,28 @@ class ChartPopulation extends Component {
  }
 }
 
-export class App extends Component {
- hexaColor = () => {
-  let str = '0123456789abcdef'
-  let color = ''
-  for (let index = 0; index < 6; index++) {
-   let index = Math.floor(Math.random() * str.length)
-   color += str[index]
-  }
-  return `#${color}`
- }
+const newFregment = () => {
+ return (
+  <>
+   <input type="text"></input>
+   <input type="password"></input>
+  </>
+ )
+}
 
- state = {
-  count: 0,
-  backgroundColor: this.hexaColor(),
+class Container extends Component {
+ render() {
+  const countryList = this.props.data.map((country, index) => (
+   <ChartPopulation key={index} worldpop={country} />
+  ))
+  return <div>{countryList}</div>
  }
+}
+
+export class App extends Component {
  handleAlert = () => {
   alert('heelo')
  }
-
- addOne = () => {
-  this.setState({ count: this.state.count + 1 })
- }
-
- changeBackGround = () => {
-  this.setState({ backgroundColor: `${this.hexaColor()}` })
- }
-
- decreaseOne = () => {
-  this.setState({ count: this.state.count - 1 })
- }
-
  render() {
   const tenHighestPopulation = [
    { country: 'World', population: 7693165599 },
@@ -135,13 +107,8 @@ export class App extends Component {
 
   return (
    <>
-    <TextWrapper
-     addOne={this.addOne}
-     decreaseOne={this.decreaseOne}
-     count={this.state.count}
-     changeBg={this.changeBackGround}
-    />
-    <Container data={tenHighestPopulation} color={this.state.backgroundColor} />
+    <TextWrapper onClick={this.handleAlert} />
+    <Container data={tenHighestPopulation} />
    </>
   )
  }

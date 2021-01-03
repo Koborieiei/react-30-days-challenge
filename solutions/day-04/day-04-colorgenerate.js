@@ -11,7 +11,6 @@ const hexaColor = () => {
   let index = Math.floor(Math.random() * str.length)
   color += str[index]
  }
- console.log(`#${color}`)
  return `#${color}`
 }
 
