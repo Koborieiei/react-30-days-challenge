@@ -66,6 +66,7 @@ const ChartPopulation = ({ worldpop: { country, population } }) => {
    <div style={childStyle}>
     <h2>{country}</h2>
    </div>
+   
    <div style={childStyle}>
     <div
      style={{
@@ -75,6 +76,7 @@ const ChartPopulation = ({ worldpop: { country, population } }) => {
      }}
     ></div>
    </div>
+   
    <div style={childStyle}>
     <h3>{population.toLocaleString()}</h3>
    </div>

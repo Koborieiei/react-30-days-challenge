@@ -1,25 +1,22 @@
-import logo from './logo.svg'
-import './App.css'
+import React from 'react'
+import useFetch from './utils/fetchAPI'
+import CountrySection from './components/CountrySection'
+import RankingSection from './components/RankingSection'
 
-function App() {
+const App = () => {
+ const url = 'https://restcountries.eu/rest/v2/all'
+ const data = useFetch(url)
+
  return (
-  <div className="App">
-   <header className="App-header">
-    <img src={logo} className="App-logo" alt="logo" />
-    <p>
-     Edit <code>src/App.js</code> Hello hot reload tes
-    </p>
-    <a
-     className="App-link"
-     href="https://reactjs.org"
-     target="_blank"
-     rel="noopener noreferrer"
-    >
-     Learn React
-    </a>
-   </header>
-  </div>
+  <>
+   {data.length !== 0 ? (
+    <>
+     <CountrySection data={data} /> <RankingSection data={data} />
+    </>
+   ) : (
+    <div>Loading</div>
+   )}
+  </>
  )
 }
-
 export default App
